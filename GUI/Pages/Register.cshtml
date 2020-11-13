@@ -1,0 +1,22 @@
+﻿@page 
+@model GUI.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Dang ky";
+}
+<div class="text-center">
+    <h1 class="display-4">Đăng ký</h1>
+    <form method="post" action="api/user/create" id="createUser">
+        <label>Tên đăng nhập</label>
+        <input type="text" id="username" placeholder="Tên đăng nhập" required /><br />
+        <label>Mật khẩu</label>
+        <input type="text" id="password" placeholder="Mật khẩu" required /><br />
+        <label>Mật khẩu</label>
+        <input type="text" id="email" placeholder="Email" required /><br />
+        <input type="hidden" id="authLevel" placeholder="Quyền" value="2" /><br />
+        <input type="submit" value="Đăng ký"/>
+        <button type="button" class="btn btn-danger">Close</button>
+        
+    </form>
+
+    
+</div>
